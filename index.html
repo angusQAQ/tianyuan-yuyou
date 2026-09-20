@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="zh-HK">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover" />
+  <title>田園語遊</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="app">
+    <div id="loading" aria-live="polite" aria-busy="true">
+      <img id="loading-art" src="art/ui/loading.png" alt="" />
+    </div>
+    <canvas id="game"></canvas>
+    <div id="hud">
+      <div id="topbar">
+        <div id="goal">請選擇一個地點</div>
+        <div id="progress"></div>
+        <div id="actions">
+          <button type="button" id="btn-home" class="hidden">回主頁</button>
+          <button type="button" id="btn-wrongbook" class="icon-text-btn" aria-label="錯題本" aria-expanded="false" aria-controls="wrongbook-panel">
+            <img src="art/ui/btn_wrongbook.png" alt="" class="btn-icon" />
+            <span>錯題本</span>
+          </button>
+          <div id="volume-wrap">
+            <button type="button" id="btn-mute" aria-label="音量設定" aria-expanded="false" aria-controls="volume-panel">🔊</button>
+            <div id="volume-panel" class="hidden" role="dialog" aria-label="音量設定">
+              <label class="vol-row vol-mute">
+                <input type="checkbox" id="vol-mute-all" />
+                <span>總靜音</span>
+              </label>
+              <label class="vol-row">
+                <span class="vol-label">背景音樂</span>
+                <input type="range" id="vol-bgm" min="0" max="100" value="35" aria-label="背景音樂音量" />
+              </label>
+              <label class="vol-row">
+                <span class="vol-label">按鈕音效</span>
+                <input type="range" id="vol-sfx" min="0" max="100" value="50" aria-label="按鈕音效音量" />
+              </label>
+            </div>
+          </div>
+          <button type="button" id="btn-restart" aria-label="重開">重開</button>
+        </div>
+      </div>
+      <div id="map-labels"></div>
+      <button type="button" id="btn-home-map" class="hidden">回主頁</button>
+      <div id="level-panel" class="hidden">
+        <div id="npc-row"><img id="npc-portrait" alt="" /><div id="npc-line"></div></div>
+        <div id="story-zone" class="zone hidden">
+          <div class="zone-label">故事圖</div>
+          <img id="story-pic" alt="故事圖" />
+        </div>
+        <div id="question-zone" class="zone">
+          <div class="zone-label">題目</div>
+          <div id="prompt"></div>
+          <div id="sentence-chars" class="hidden"></div>
+        </div>
+        <div id="slot-zone" class="zone hidden">
+          <div class="zone-label" id="slot-label">請把字塊排入空格</div>
+          <div id="slots"></div>
+        </div>
+        <div id="pool-zone" class="zone">
+          <div class="zone-label" id="pool-label">請選擇答案</div>
+          <div id="tiles"></div>
+        </div>
+        <div id="level-actions">
+          <button type="button" id="btn-hint">提示</button>
+          <button type="button" id="btn-back">返回農場</button>
+        </div>
+      </div>
+      <div id="title">
+        <h1>田園語遊</h1>
+        <img id="title-kid" src="art/2d/player_kid.png" alt="" />
+        <button type="button" id="btn-start">開始遊戲</button>
+        <p id="title-credit" class="title-credit">本遊戲由陳凱杰Angus Chen老師製作</p>
+      </div>
+      <div id="difficulty" class="hidden">
+        <h2>請選擇難度</h2>
+        <div class="diff-row">
+          <button type="button" data-diff="easy">簡單</button>
+          <button type="button" data-diff="medium">中等</button>
+          <button type="button" data-diff="hard">困難</button>
+        </div>
+      </div>
+      <div id="tip" class="hidden">
+        <div class="tip-card tutorial-card">
+          <div class="tut-frame">
+            <img id="tut-img" src="art/ui/tutorial/tut_01_l1_tap.png" alt="玩法教學" />
+          </div>
+          <p id="tut-page" class="tut-page">1 / 4</p>
+          <div class="tip-actions">
+            <button type="button" id="btn-tip-prev">上一頁</button>
+            <button type="button" id="btn-tip-next">下一頁</button>
+            <button type="button" id="btn-tip-ok" class="hidden">開始遊戲</button>
+            <button type="button" id="btn-tip-skip">略過</button>
+          </div>
+        </div>
+      </div>
+      <div id="level-clear" class="hidden">
+        <div class="level-clear-card">
+          <img src="art/ui/stamp_done.png" alt="已完成" />
+          <p>本關完成！</p>
+          <button type="button" id="btn-level-clear-map">返回農場</button>
+        </div>
+      </div>
+      <div id="win" class="hidden">
+        <p>五關完成！你是農場語文小能手。</p>
+        <button type="button" id="btn-win-home">回主頁</button>
+        <button type="button" id="btn-win-restart">再玩一次</button>
+      </div>
+    </div>
+    <div id="wrongbook-panel" class="hidden" role="dialog" aria-label="錯題本">
+      <div class="wb-card">
+        <div class="wb-head">
+          <h2>錯題本</h2>
+          <button type="button" id="btn-wb-close" aria-label="關閉">關閉</button>
+        </div>
+        <p id="wb-empty" class="wb-empty">尚未記錄錯題。答錯題目後，會自動保存在此裝置。</p>
+        <div id="wb-list" class="wb-list" hidden></div>
+        <div class="wb-foot">
+          <button type="button" id="btn-wb-clear">清除全部</button>
+        </div>
+      </div>
+    </div>
+    <div id="toast" class="hidden" aria-live="polite"></div>
+    <div id="drag-layer"></div>
+    <div id="fx-pop" class="hidden">
+      <div class="fx-card success">
+        <img id="fx-img" alt="答對了" />
+        <p id="fx-msg">答對了！真好。</p>
+        <p id="fx-extra" class="hidden"></p>
+        <button type="button" id="btn-fx-ok">繼續</button>
+      </div>
+    </div>
+    <div id="wrong-tip" class="hidden">
+      <div class="tip-modal">
+        <h3>提示</h3>
+        <p id="wrong-tip-body">請再試一次。</p>
+        <button type="button" id="btn-wrong-tip-ok">知道了</button>
+      </div>
+    </div>
+  </div>
+  <script type="importmap">
+  {
+    "imports": {
+      "three": "https://unpkg.com/three@0.160.0/build/three.module.js"
+    }
+  }
+  </script>
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>
