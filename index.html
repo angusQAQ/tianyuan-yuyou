@@ -103,10 +103,11 @@
           <button type="button" id="btn-level-clear-map">返回農場</button>
         </div>
       </div>
-      <div id="win" class="hidden">
-        <p>五關完成！你是農場語文小能手。</p>
-        <button type="button" id="btn-win-home">回主頁</button>
-        <button type="button" id="btn-win-restart">再玩一次</button>
+      <div id="win" class="hidden" role="dialog" aria-label="五關完成！你是語文小能手！">
+        <img id="win-art" class="win-art" src="art/ui/clear_all_five.jpg" alt="五關完成！你是語文小能手！" />
+        <div class="win-actions">
+          <button type="button" id="btn-win-home">回到主頁</button>
+        </div>
       </div>
     </div>
     <div id="wrongbook-panel" class="hidden" role="dialog" aria-label="錯題本">

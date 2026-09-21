@@ -40,6 +40,15 @@ const btnHomeLevel = document.getElementById('btn-home-level');
 const btnHint = document.getElementById('btn-hint');
 const toastEl = document.getElementById('toast');
 const winEl = document.getElementById('win');
+const winArtEl = document.getElementById('win-art');
+/** R37：jpg 優先，失敗 fallback png */
+if (winArtEl) {
+  winArtEl.addEventListener('error', () => {
+    if (winArtEl.dataset.fallback) return;
+    winArtEl.dataset.fallback = '1';
+    winArtEl.src = 'art/ui/clear_all_five.png';
+  });
+}
 const levelClearEl = document.getElementById('level-clear');
 const npcRow = document.getElementById('npc-row');
 const titleEl = document.getElementById('title');
@@ -106,6 +115,8 @@ const state = {
   /** 各關×難度剩餘題隊列 */
   sessionQueues: {},
   done: EMPTY_DONE(),
+  /** R37：本局已出過五關全通稱讚（避免回 map 再彈） */
+  clearAllCelebrated: false,
   hintUsed: false,
   hintIndex: 0,
   pendingAdvance: false,
@@ -1341,6 +1352,36 @@ function dismissTip() {
   tipEl.classList.add('hidden');
 }
 
+/** R37：五關全通稱讚畫面（文案已畫入 clear_all_five） */
+function showClearAllFive() {
+  state.clearAllCelebrated = true;
+  state.scene = 'win';
+  state.locked = false;
+  setInLevelHud(false);
+  hideFx();
+  hideLevelClear();
+  titleEl.classList.add('hidden');
+  difficultyEl.classList.add('hidden');
+  tipEl.classList.add('hidden');
+  levelPanel.classList.add('hidden');
+  mapLabels.classList.add('hidden');
+  winEl.classList.remove('hidden');
+  setHomeVisible(false, false);
+  goalEl.textContent = '五關完成';
+  progressEl.textContent = '完成 5/5';
+  syncHubScrollMode();
+  try { window.scrollTo(0, 0); } catch (_) {}
+  try { if (renderer) resize(); } catch (_) {}
+  speak('五關完成！你是語文小能手！');
+}
+
+/** R37：「回到主頁」→ 農場選關 hub（保留印章；唔清進度） */
+function dismissWinToMap() {
+  winEl.classList.add('hidden');
+  beep('tap');
+  showMap();
+}
+
 function showMap() {
   state.scene = 'map';
   state.locked = false;
@@ -1362,10 +1403,9 @@ function showMap() {
   const doneCount = Object.values(state.done).filter(Boolean).length;
   progressEl.textContent = `完成 ${doneCount}/5`;
   refreshMapLabels();
-  if (doneCount === 5) {
-    state.scene = 'win';
-    winEl.classList.remove('hidden');
-    setHomeVisible(true, false);
+  // R37：五關印章齊 → 先出全屏稱讚（只一次）；未齊則照舊 map／教學
+  if (doneCount === 5 && !state.clearAllCelebrated) {
+    showClearAllFive();
   } else if (!state.tipSeen) {
     openTutorial();
   }
@@ -1868,6 +1908,7 @@ function goHome() {
   }
   const t0 = performance.now();
   state.done = EMPTY_DONE();
+  state.clearAllCelebrated = false;
   state.itemIndex = 0;
   state.levelId = null;
   state.runItems = [];
@@ -1888,6 +1929,7 @@ function goHome() {
 function fullRestart() {
   const t0 = performance.now();
   state.done = EMPTY_DONE();
+  state.clearAllCelebrated = false;
   state.itemIndex = 0;
   state.levelId = null;
   state.runItems = [];
@@ -1913,7 +1955,7 @@ onPointerActivate(btnHome, () => goHome());
 onPointerActivate(btnHomeMap, () => goHome());
 // R33：#btn-home-level 已移除；若殘留 DOM 亦唔綁 goHome
 if (btnHomeLevel) onPointerActivate(btnHomeLevel, () => goHome());
-if (btnWinHome) onPointerActivate(btnWinHome, () => goHome());
+if (btnWinHome) onPointerActivate(btnWinHome, () => dismissWinToMap());
 onPointerActivate(btnHint, () => {
   if (!state.currentItem) return;
   const item = state.currentItem;
@@ -2050,7 +2092,8 @@ onPointerActivate(btnRestart, () => {
     beep('tap');
   } else fullRestart();
 });
-onPointerActivate(btnWinRestart, () => fullRestart());
+// R37：全通畫面只留「回到主頁」；#btn-win-restart 已移除
+if (btnWinRestart) onPointerActivate(btnWinRestart, () => fullRestart());
 onPointerActivate(btnStart, () => { unlockAndPreloadAudio(); showDifficulty(); });
 difficultyEl.querySelectorAll('[data-diff]').forEach((btn) => {
   btn.addEventListener('click', () => {
@@ -2216,6 +2259,15 @@ try {
 try {
   window.__TYY_PLAYTEST = {
     goMap() { showMap(); return this.snapshot(); },
+    /** R37：模擬本局印章狀態後回 map（可觸發全通稱讚） */
+    setDone(map) {
+      state.done = { ...EMPTY_DONE(), ...(map || {}) };
+      state.tipSeen = true;
+      tipEl?.classList.add('hidden');
+      return this.snapshot();
+    },
+    showClearAll() { showClearAllFive(); return this.snapshot(); },
+    dismissWin() { dismissWinToMap(); return this.snapshot(); },
     forceLevel(levelId, diff, rawItems) {
       try { clearTimeout(fxTimer); } catch (_) {}
       try { clearTimeout(hideLevelClear._t); } catch (_) {}
@@ -2266,6 +2318,10 @@ try {
         wrongVisible: !wrongTipEl?.classList.contains('hidden'),
         fxVisible: !fxPop?.classList.contains('hidden'),
         levelClearVisible: !levelClearEl?.classList.contains('hidden'),
+        winVisible: !winEl?.classList.contains('hidden'),
+        done: { ...(state.done || {}) },
+        clearAllCelebrated: !!state.clearAllCelebrated,
+        winArtSrc: winArtEl?.currentSrc || winArtEl?.src || '',
         wrongBody: wrongTipBody?.textContent || '',
         topbarZ: getComputedStyle(document.getElementById('topbar')).zIndex,
         wrongZ: getComputedStyle(wrongTipEl).zIndex,

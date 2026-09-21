@@ -9,7 +9,7 @@ html, body, #app {
 }
 #game { position: absolute; inset: 0; width: 100%; height: 100%; display: block; }
 #hud { position: absolute; inset: 0; pointer-events: none; }
-#hud button, #hud .tile, #map-labels .hotspot-label, #level-clear, #fx-pop, #wrong-tip, #loading, #volume-wrap, #volume-panel, #wrongbook-panel, #wrongbook-panel * {
+#hud button, #hud .tile, #map-labels .hotspot-label, #level-clear, #win, #fx-pop, #wrong-tip, #loading, #volume-wrap, #volume-panel, #wrongbook-panel, #wrongbook-panel * {
   pointer-events: auto;
 }
 #topbar {
@@ -332,11 +332,42 @@ body.in-level #level-panel:not(.hidden) {
   70% { transform: scale(1.08); }
   100% { transform: scale(1); opacity: 1; }
 }
+/* R37：五關全通稱讚 — 全屏 cover；文案已畫入圖，唔叠大字；掣放奶油空白區 */
 #win {
-  position: absolute; inset: 0; display: flex; flex-direction: column;
-  align-items: center; justify-content: center; gap: 16px;
-  background: rgba(232,245,233,0.94); pointer-events: auto;
-  font-size: 28px; font-weight: 800; color: #1b5e20; text-align: center; padding: 24px;
+  position: fixed; inset: 0; z-index: 220;
+  display: flex; flex-direction: column;
+  align-items: center; justify-content: flex-end;
+  gap: 0;
+  background: #fff5e1;
+  pointer-events: auto;
+  text-align: center;
+  padding: 0;
+  padding-bottom: max(20px, env(safe-area-inset-bottom, 0px));
+}
+#win .win-art {
+  position: absolute; inset: 0;
+  width: 100%; height: 100%;
+  object-fit: cover;
+  object-position: center center;
+  pointer-events: none;
+  user-select: none;
+  -webkit-user-select: none;
+}
+#win .win-actions {
+  position: relative; z-index: 1;
+  display: flex; justify-content: center; align-items: center;
+  width: 100%;
+  /* 奶油區約在圖下方 30%：靠底置中 */
+  padding: 0 24px max(12px, 2vh);
+  margin-bottom: clamp(18px, 6vh, 56px);
+}
+#win #btn-win-home {
+  font-size: clamp(18px, 4.2vw, 24px);
+  font-weight: 800;
+  padding: 14px 36px;
+  min-height: 48px;
+  border: none; border-radius: 999px; cursor: pointer;
+  background: #fff59d; color: #33691e; box-shadow: 0 4px 0 #c0a000;
 }
 
 #title, #tip {
@@ -451,12 +482,7 @@ body.in-level #level-panel:not(.hidden) {
   border: 3px dashed #8d6e63;
   background: rgba(255,253,245,0.96);
 }
-#win {
-  background: url('art/bg/bg_title.png') center/cover no-repeat;
-}
-#win p {
-  background: rgba(255,255,255,0.9); padding: 16px 22px; border-radius: 16px;
-}
+/* R37：稱讚圖由 .win-art 負責；保留奶油底作 cover 未載入時 fallback */
 
 /* 透明底素材 */
 #title-kid, #npc-portrait { background: transparent; }
