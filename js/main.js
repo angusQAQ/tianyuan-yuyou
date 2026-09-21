@@ -115,6 +115,8 @@ const state = {
 
 let renderer, scene, camera, farmMesh, bgMesh, hotspotMeshes = [], kidMesh, kidTex;
 let hubTexPortrait = null, hubTexLandscape = null;
+/** R35：快取 hub 模式，orientation／模式未變就唔好重設 map */
+let hubModeCached = null; // 'portrait' | 'landscape' | null
 let cowMesh, cowTexA, cowTexB, cowFrame = 0, cowNext = 0;
 let kidBase = { x: -2.4, y: -2.4 };
 let kickUntil = 0;
@@ -797,8 +799,20 @@ function loadTex(url) {
 }
 
 
+/** R35：Desktop（闊螢幕／精細指標）永遠 landscape，禁讀／切 portrait */
+function isDesktopHub() {
+  return window.matchMedia('(min-width: 900px)').matches
+    || window.matchMedia('(pointer: fine) and (min-width: 768px)').matches;
+}
+
+/** R35：只在真正豎屏行動裝置用 portrait；Desktop 鎖死 landscape */
+function getHubMode() {
+  if (isDesktopHub()) return 'landscape';
+  return window.matchMedia('(orientation: portrait)').matches ? 'portrait' : 'landscape';
+}
+
 function isPortraitOrientation() {
-  return window.matchMedia('(orientation: portrait)').matches;
+  return getHubMode() === 'portrait';
 }
 
 function activeSpots() {
@@ -809,14 +823,25 @@ function activeCow() {
   return getCow(isPortraitOrientation());
 }
 
+let hubMapChangeCount = 0;
+
 function applyHubBackground() {
   if (!farmMesh) return;
-  const tex = isPortraitOrientation() ? hubTexPortrait : hubTexLandscape;
+  const mode = getHubMode();
+  const tex = mode === 'portrait' ? hubTexPortrait : hubTexLandscape;
   if (!tex) return;
+  // 模式未變且已是同一張貼圖 → 唔重設（禁輪播／resize 無故換圖源）
+  if (hubModeCached === mode && farmMesh.material.map === tex) return;
+  const prevMode = hubModeCached;
+  hubModeCached = mode;
   if (farmMesh.material.map !== tex) {
     farmMesh.material.map = tex;
     farmMesh.material.color.set(0xffffff);
     farmMesh.material.needsUpdate = true;
+    hubMapChangeCount += 1;
+  } else if (prevMode !== mode) {
+    // 模式變但貼圖偶發相同（未載入）仍記一次，方便自測
+    hubMapChangeCount += 1;
   }
 }
 
@@ -2036,6 +2061,20 @@ try {
     isPortraitHubScroll,
     syncHubScrollMode,
     contentHeight: () => document.documentElement.style.getPropertyValue('--tyy-hub-scroll-h')
+  };
+} catch (_) {}
+
+try {
+  window.__TYY_HUB = {
+    getMode: getHubMode,
+    isDesktop: isDesktopHub,
+    getCached: () => hubModeCached,
+    mapChangeCount: () => hubMapChangeCount,
+    mapImageSrc: () => {
+      const img = farmMesh && farmMesh.material && farmMesh.material.map
+        && (farmMesh.material.map.image || (farmMesh.material.map.source && farmMesh.material.map.source.data));
+      return (img && (img.currentSrc || img.src)) || '';
+    }
   };
 } catch (_) {}
 
