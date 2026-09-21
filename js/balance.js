@@ -4815,7 +4815,7 @@ export const LEVELS = {
       easy: [
         {
           id: "l5e01",
-          pic: "art/story/pic_story_01.png",
+          pic: "art/story/pic_story_01.jpg",
           prompt: "請看圖，選出有用的字詞，組成一句通順的話。",
           order: ["早上","，","同學們","在學校門口整齊排隊","。"],
           distractors: ["夜晚","在家","睡覺","果園"],
@@ -4829,7 +4829,7 @@ export const LEVELS = {
         },
         {
           id: "l5e02",
-          pic: "art/story/pic_story_02.png",
+          pic: "art/story/pic_story_02.jpg",
           prompt: "請看圖，選出有用的字詞，組成一句通順的話。",
           order: ["今天","，","小明","在課室裏認真看書","。"],
           distractors: ["夜晚","操場","踢足球","睡覺"],
@@ -4843,7 +4843,7 @@ export const LEVELS = {
         },
         {
           id: "l5e03",
-          pic: "art/story/pic_story_03.png",
+          pic: "art/story/pic_story_03.jpg",
           prompt: "請看圖，選出有用的字詞，組成一句通順的話。",
           order: ["晚上","，","媽媽","替我準備晚飯","。"],
           distractors: ["早上","太陽高掛","回校","公園"],
@@ -4857,7 +4857,7 @@ export const LEVELS = {
         },
         {
           id: "l5e04",
-          pic: "art/story/pic_story_04.png",
+          pic: "art/story/pic_story_04.jpg",
           prompt: "請看圖，選出有用的字詞，組成一句通順的話。",
           order: ["白天","，","爸爸","在家裏陪我做功課","。"],
           distractors: ["夜晚","操場","食飯","踢球"],
@@ -4871,7 +4871,7 @@ export const LEVELS = {
         },
         {
           id: "l5e05",
-          pic: "art/story/pic_story_05.png",
+          pic: "art/story/pic_story_05.jpg",
           prompt: "請看圖，選出有用的字詞，組成一句通順的話。",
           order: ["小息時","，","兩位同學","在操場分享零食","。"],
           distractors: ["夜晚","飯廳","考試","上數學課"],
@@ -4885,7 +4885,7 @@ export const LEVELS = {
         },
         {
           id: "l5e06",
-          pic: "art/story/pic_story_06.png",
+          pic: "art/story/pic_story_06.jpg",
           prompt: "請看圖，選出有用的字詞，組成一句通順的話。",
           order: ["星期天","，","我和爺爺奶奶","在公園散步","。"],
           distractors: ["夜晚","學校排隊","下雨","果園"],
@@ -4899,7 +4899,7 @@ export const LEVELS = {
         },
         {
           id: "l5e07",
-          pic: "art/story/pic_story_07.png",
+          pic: "art/story/pic_story_07.jpg",
           prompt: "請看圖，選出有用的字詞，組成一句通順的話。",
           order: ["下雨天","，","小明","撐着雨傘走進學校","。"],
           distractors: ["晴天","夜晚","放學","公園"],
@@ -4913,7 +4913,7 @@ export const LEVELS = {
         },
         {
           id: "l5e08",
-          pic: "art/story/pic_story_08.png",
+          pic: "art/story/pic_story_08.jpg",
           prompt: "請看圖，選出有用的字詞，組成一句通順的話。",
           order: ["今天","，","小美","在圖書館挑選圖書","。"],
           distractors: ["夜晚","操場","刷牙","踢球"],
@@ -4927,7 +4927,7 @@ export const LEVELS = {
         },
         {
           id: "l5e09",
-          pic: "art/story/pic_story_09.png",
+          pic: "art/story/pic_story_09.jpg",
           prompt: "請看圖，選出有用的字詞，組成一句通順的話。",
           order: ["早上","，","我","在浴室裏刷牙","。"],
           distractors: ["夜晚臨睡","學校","食飯","睡覺"],
@@ -4941,7 +4941,7 @@ export const LEVELS = {
         },
         {
           id: "l5e10",
-          pic: "art/story/pic_story_10.png",
+          pic: "art/story/pic_story_10.jpg",
           prompt: "請看圖，選出有用的字詞，組成一句通順的話。",
           order: ["體育課時","，","同學們","在操場上拍球","。"],
           distractors: ["夜晚","圖書館","看電視","睡覺"],
@@ -4955,7 +4955,7 @@ export const LEVELS = {
         },
         {
           id: "l5e11",
-          pic: "art/story/pic_story_11.png",
+          pic: "art/story/pic_story_11.jpg",
           prompt: "請看圖，選出有用的字詞，組成一句通順的話。",
           order: ["晚上","，","媽媽和我","在客廳看電視","。"],
           distractors: ["早上","學校","做功課","太陽"],
@@ -4969,7 +4969,7 @@ export const LEVELS = {
         },
         {
           id: "l5e12",
-          pic: "art/story/pic_story_12.png",
+          pic: "art/story/pic_story_12.jpg",
           prompt: "請看圖，選出有用的字詞，組成一句通順的話。",
           order: ["早上","，","媽媽替我準備早餐","，","我收拾書包","。"],
           distractors: ["夜晚","操場","撐傘回校","下雨"],
@@ -4983,7 +4983,7 @@ export const LEVELS = {
         },
         {
           id: "l5e13",
-          pic: "art/story/pic_story_13.png",
+          pic: "art/story/pic_story_13.jpg",
           prompt: "請看圖，選出有用的字詞，組成一句通順的話。",
           order: ["早上","，","小明","在陽台給花兒澆水","。"],
           distractors: ["夜晚","課室","食飯","學校"],
@@ -4997,7 +4997,7 @@ export const LEVELS = {
         },
         {
           id: "l5e14",
-          pic: "art/story/pic_story_14.png",
+          pic: "art/story/pic_story_14.jpg",
           prompt: "請看圖，選出有用的字詞，組成一句通順的話。",
           order: ["吃飯前","，","小明","在洗手盆洗手","。"],
           distractors: ["夜晚","操場","睡覺","踢球"],
@@ -5011,7 +5011,7 @@ export const LEVELS = {
         },
         {
           id: "l5e15",
-          pic: "art/story/pic_story_15.png",
+          pic: "art/story/pic_story_15.jpg",
           prompt: "請看圖，選出有用的字詞，組成一句通順的話。",
           order: ["早上","，","爸爸","牽着我的手橫過馬路","。"],
           distractors: ["夜晚","公園","游泳","睡覺"],
@@ -5025,7 +5025,7 @@ export const LEVELS = {
         },
         {
           id: "l5e16",
-          pic: "art/story/pic_story_16.png",
+          pic: "art/story/pic_story_16.jpg",
           prompt: "請看圖，選出有用的字詞，組成一句通順的話。",
           order: ["星期天","，","媽媽","帶我到市場買水果","。"],
           distractors: ["夜晚","課室","刷牙","考試"],
@@ -5039,7 +5039,7 @@ export const LEVELS = {
         },
         {
           id: "l5e17",
-          pic: "art/story/pic_story_17.png",
+          pic: "art/story/pic_story_17.jpg",
           prompt: "請看圖，選出有用的字詞，組成一句通順的話。",
           order: ["上課時","，","同學","在黑板上寫字","。"],
           distractors: ["夜晚","公園","食飯","睡覺"],
@@ -5053,7 +5053,7 @@ export const LEVELS = {
         },
         {
           id: "l5e18",
-          pic: "art/story/pic_story_18.png",
+          pic: "art/story/pic_story_18.jpg",
           prompt: "請看圖，選出有用的字詞，組成一句通順的話。",
           order: ["音樂課時","，","同學們","跟着老師開心唱歌","。"],
           distractors: ["夜晚","廚房","睡覺","煮飯"],
@@ -5067,7 +5067,7 @@ export const LEVELS = {
         },
         {
           id: "l5e19",
-          pic: "art/story/pic_story_19.png",
+          pic: "art/story/pic_story_19.jpg",
           prompt: "請看圖，選出有用的字詞，組成一句通順的話。",
           order: ["美術課時","，","小美","正在畫畫","。"],
           distractors: ["夜晚","操場","買菜","睡覺"],
@@ -5081,7 +5081,7 @@ export const LEVELS = {
         },
         {
           id: "l5e20",
-          pic: "art/story/pic_story_20.png",
+          pic: "art/story/pic_story_20.jpg",
           prompt: "請看圖，選出有用的字詞，組成一句通順的話。",
           order: ["下午","，","小明","在客廳裏餵小貓吃東西","。"],
           distractors: ["夜晚","學校","排隊","考試"],
@@ -5095,7 +5095,7 @@ export const LEVELS = {
         },
         {
           id: "l5e21",
-          pic: "art/story/pic_story_21.png",
+          pic: "art/story/pic_story_21.jpg",
           prompt: "請看圖，選出有用的字詞，組成一句通順的話。",
           order: ["下午","，","奶奶和小妹妹","在客廳裏摺衣服","。"],
           distractors: ["夜晚","操場","游泳","踢球"],
@@ -5109,7 +5109,7 @@ export const LEVELS = {
         },
         {
           id: "l5e22",
-          pic: "art/story/pic_story_22.png",
+          pic: "art/story/pic_story_22.jpg",
           prompt: "請看圖，選出有用的字詞，組成一句通順的話。",
           order: ["晚上","，","一家人","為小明慶祝生日","。"],
           distractors: ["早上","學校","下雨上學","考試"],
@@ -5123,7 +5123,7 @@ export const LEVELS = {
         },
         {
           id: "l5e23",
-          pic: "art/story/pic_story_23.png",
+          pic: "art/story/pic_story_23.jpg",
           prompt: "請看圖，選出有用的字詞，組成一句通順的話。",
           order: ["早上","，","同學們","在路邊排隊上校車","。"],
           distractors: ["夜晚","客廳","看電視","睡覺"],
@@ -5137,7 +5137,7 @@ export const LEVELS = {
         },
         {
           id: "l5e24",
-          pic: "art/story/pic_story_24.png",
+          pic: "art/story/pic_story_24.jpg",
           prompt: "請看圖，選出有用的字詞，組成一句通順的話。",
           order: ["早上","，","小明","背着書包去上學","。"],
           distractors: ["夜晚","博物館","食蛋糕","睡覺"],
@@ -5151,7 +5151,7 @@ export const LEVELS = {
         },
         {
           id: "l5e25",
-          pic: "art/story/pic_story_25.png",
+          pic: "art/story/pic_story_25.jpg",
           prompt: "請看圖，選出有用的字詞，組成一句通順的話。",
           order: ["假日","，","爺爺","在客廳裏看報紙","。"],
           distractors: ["夜晚","操場","踢足球","睡覺"],
@@ -5165,7 +5165,7 @@ export const LEVELS = {
         },
         {
           id: "l5e26",
-          pic: "art/story/pic_story_26.png",
+          pic: "art/story/pic_story_26.jpg",
           prompt: "請看圖，選出有用的字詞，組成一句通順的話。",
           order: ["早上","，","老師和同學們","在菜園裏給蔬菜澆水","。"],
           distractors: ["夜晚","浴室","刷牙","睡覺"],
@@ -5179,7 +5179,7 @@ export const LEVELS = {
         },
         {
           id: "l5e27",
-          pic: "art/story/pic_story_27.png",
+          pic: "art/story/pic_story_27.jpg",
           prompt: "請看圖，選出有用的字詞，組成一句通順的話。",
           order: ["中午","，","同學們","在食堂裏吃午餐","。"],
           distractors: ["夜晚","公園","放風箏","睡覺"],
@@ -5193,7 +5193,7 @@ export const LEVELS = {
         },
         {
           id: "l5e28",
-          pic: "art/story/pic_story_28.png",
+          pic: "art/story/pic_story_28.jpg",
           prompt: "請看圖，選出有用的字詞，組成一句通順的話。",
           order: ["早上","，","媽媽和我","一起準備午餐","。"],
           distractors: ["夜晚","圖書館","唱歌","睡覺"],
@@ -5207,7 +5207,7 @@ export const LEVELS = {
         },
         {
           id: "l5e29",
-          pic: "art/story/pic_story_29.png",
+          pic: "art/story/pic_story_29.jpg",
           prompt: "請看圖，選出有用的字詞，組成一句通順的話。",
           order: ["今天","，","媽媽","帶我到診所看醫生","。"],
           distractors: ["夜晚","操場","踢球","睡覺"],
@@ -5221,7 +5221,7 @@ export const LEVELS = {
         },
         {
           id: "l5e30",
-          pic: "art/story/pic_story_30.png",
+          pic: "art/story/pic_story_30.jpg",
           prompt: "請看圖，選出有用的字詞，組成一句通順的話。",
           order: ["下午","，","爸爸","陪我在家裏下棋","。"],
           distractors: ["夜晚","食堂","吃飯","睡覺"],
@@ -5235,7 +5235,7 @@ export const LEVELS = {
         },
         {
           id: "l5e31",
-          pic: "art/story/pic_story_31.png",
+          pic: "art/story/pic_story_31.jpg",
           prompt: "請看圖，選出有用的字詞，組成一句通順的話。",
           order: ["小息後","，","同學們","在課室裏清潔","。"],
           distractors: ["夜晚","公園","放風箏","睡覺"],
@@ -5249,7 +5249,7 @@ export const LEVELS = {
         },
         {
           id: "l5e32",
-          pic: "art/story/pic_story_32.png",
+          pic: "art/story/pic_story_32.jpg",
           prompt: "請看圖，選出有用的字詞，組成一句通順的話。",
           order: ["早上","，","同學們","參加升旗禮","。"],
           distractors: ["夜晚","廚房","煮飯","睡覺"],
@@ -5263,7 +5263,7 @@ export const LEVELS = {
         },
         {
           id: "l5e33",
-          pic: "art/story/pic_story_33.png",
+          pic: "art/story/pic_story_33.jpg",
           prompt: "請看圖，選出有用的字詞，組成一句通順的話。",
           order: ["體育課時","，","同學們","在泳池游泳","。"],
           distractors: ["夜晚","課室","寫字","睡覺"],
@@ -5277,7 +5277,7 @@ export const LEVELS = {
         },
         {
           id: "l5e34",
-          pic: "art/story/pic_story_34.png",
+          pic: "art/story/pic_story_34.jpg",
           prompt: "請看圖，選出有用的字詞，組成一句通順的話。",
           order: ["星期天","，","我","在陽台替花盆播種","。"],
           distractors: ["夜晚","操場","跑步","睡覺"],
@@ -5291,7 +5291,7 @@ export const LEVELS = {
         },
         {
           id: "l5e35",
-          pic: "art/story/pic_story_35.png",
+          pic: "art/story/pic_story_35.jpg",
           prompt: "請看圖，選出有用的字詞，組成一句通順的話。",
           order: ["晚上","，","我和爺爺奶奶","視像通話","。"],
           distractors: ["早上","街市","買水果","太陽"],
@@ -5305,7 +5305,7 @@ export const LEVELS = {
         },
         {
           id: "l5e36",
-          pic: "art/story/pic_story_36.png",
+          pic: "art/story/pic_story_36.jpg",
           prompt: "請看圖，選出有用的字詞，組成一句通順的話。",
           order: ["放學後","，","媽媽","帶我到文具店買文具","。"],
           distractors: ["夜晚","泳池","游泳","睡覺"],
@@ -5319,7 +5319,7 @@ export const LEVELS = {
         },
         {
           id: "l5e37",
-          pic: "art/story/pic_story_37.png",
+          pic: "art/story/pic_story_37.jpg",
           prompt: "請看圖，選出有用的字詞，組成一句通順的話。",
           order: ["早上","，","我","在公園裏遛狗","。"],
           distractors: ["夜晚","課室","考試","睡覺"],
@@ -5333,7 +5333,7 @@ export const LEVELS = {
         },
         {
           id: "l5e38",
-          pic: "art/story/pic_story_38.png",
+          pic: "art/story/pic_story_38.jpg",
           prompt: "請看圖，選出有用的字詞，組成一句通順的話。",
           order: ["下午","，","我","幫忙提着購物袋回家","。"],
           distractors: ["夜晚","音樂室","唱歌","睡覺"],
@@ -5347,7 +5347,7 @@ export const LEVELS = {
         },
         {
           id: "l5e39",
-          pic: "art/story/pic_story_39.png",
+          pic: "art/story/pic_story_39.jpg",
           prompt: "請看圖，選出有用的字詞，組成一句通順的話。",
           order: ["下午","，","我","在家裏練習彈鋼琴","。"],
           distractors: ["夜晚","操場","踢足球","睡覺"],
@@ -5361,7 +5361,7 @@ export const LEVELS = {
         },
         {
           id: "l5e40",
-          pic: "art/story/pic_story_40.png",
+          pic: "art/story/pic_story_40.jpg",
           prompt: "請看圖，選出有用的字詞，組成一句通順的話。",
           order: ["科學課時","，","同學們","在做實驗","。"],
           distractors: ["夜晚","廚房","煮麵","睡覺"],
@@ -5375,7 +5375,7 @@ export const LEVELS = {
         },
         {
           id: "l5e41",
-          pic: "art/story/pic_story_41.png",
+          pic: "art/story/pic_story_41.jpg",
           prompt: "請看圖，選出有用的字詞，組成一句通順的話。",
           order: ["晚上","，","小男孩","在家裏專心地寫日記","。"],
           distractors: ["早上","操場","踢球","太陽"],
@@ -5389,7 +5389,7 @@ export const LEVELS = {
         },
         {
           id: "l5e42",
-          pic: "art/story/pic_story_42.png",
+          pic: "art/story/pic_story_42.jpg",
           prompt: "請看圖，選出有用的字詞，組成一句通順的話。",
           order: ["星期天","，","我們","在公園裏放風箏","。"],
           distractors: ["夜晚","課室","寫黑板","睡覺"],
@@ -5403,7 +5403,7 @@ export const LEVELS = {
         },
         {
           id: "l5e43",
-          pic: "art/story/pic_story_43.png",
+          pic: "art/story/pic_story_43.jpg",
           prompt: "請看圖，選出有用的字詞，組成一句通順的話。",
           order: ["今天","，","老師","帶我們到博物館參觀","。"],
           distractors: ["夜晚","浴室","刷牙","睡覺"],
@@ -5417,7 +5417,7 @@ export const LEVELS = {
         },
         {
           id: "l5e44",
-          pic: "art/story/pic_story_44.png",
+          pic: "art/story/pic_story_44.jpg",
           prompt: "請看圖，選出有用的字詞，組成一句通順的話。",
           order: ["早上","，","小美","在廚房裏做三明治","。"],
           distractors: ["夜晚","操場","升旗","睡覺"],
@@ -5431,7 +5431,7 @@ export const LEVELS = {
         },
         {
           id: "l5e45",
-          pic: "art/story/pic_story_45.png",
+          pic: "art/story/pic_story_45.jpg",
           prompt: "請看圖，選出有用的字詞，組成一句通順的話。",
           order: ["早上","，","小明","在門口穿鞋準備上學","。"],
           distractors: ["夜晚","食堂","吃飯","睡覺"],
@@ -5445,7 +5445,7 @@ export const LEVELS = {
         },
         {
           id: "l5e46",
-          pic: "art/story/pic_story_46.png",
+          pic: "art/story/pic_story_46.jpg",
           prompt: "請看圖，選出有用的字詞，組成一句通順的話。",
           order: ["早上","，","小美","在窗台給盆栽澆水","。"],
           distractors: ["夜晚","泳池","游泳","睡覺"],
@@ -5459,7 +5459,7 @@ export const LEVELS = {
         },
         {
           id: "l5e47",
-          pic: "art/story/pic_story_47.png",
+          pic: "art/story/pic_story_47.jpg",
           prompt: "請看圖，選出有用的字詞，組成一句通順的話。",
           order: ["教師節","，","小明","送花給老師","。"],
           distractors: ["夜晚","廚房","洗碗","睡覺"],
@@ -5473,7 +5473,7 @@ export const LEVELS = {
         },
         {
           id: "l5e48",
-          pic: "art/story/pic_story_48.png",
+          pic: "art/story/pic_story_48.jpg",
           prompt: "請看圖，選出有用的字詞，組成一句通順的話。",
           order: ["小息時","，","同學們","在課室做垃圾分類","。"],
           distractors: ["夜晚","公園","放風箏","睡覺"],
@@ -5487,7 +5487,7 @@ export const LEVELS = {
         },
         {
           id: "l5e49",
-          pic: "art/story/pic_story_49.png",
+          pic: "art/story/pic_story_49.jpg",
           prompt: "請看圖，選出有用的字詞，組成一句通順的話。",
           order: ["星期天","，","我們","帶水果去探望爺爺嫲嫲","。"],
           distractors: ["夜晚","科學室","實驗","睡覺"],
@@ -5501,7 +5501,7 @@ export const LEVELS = {
         },
         {
           id: "l5e50",
-          pic: "art/story/pic_story_50.png",
+          pic: "art/story/pic_story_50.jpg",
           prompt: "請看圖，選出有用的字詞，組成一句通順的話。",
           order: ["今天","，","媽媽","帶我到書店挑選故事書","。"],
           distractors: ["夜晚","操場","跑接力","睡覺"],
@@ -5517,7 +5517,7 @@ export const LEVELS = {
       medium: [
         {
           id: "l5m01",
-          pic: "art/story/pic_story_01.png",
+          pic: "art/story/pic_story_01.jpg",
           prompt: "請看圖，選出有用的字詞，組成一句通順的話。",
           order: ["早上","，","同學們","在學校門口","整齊排隊","。"],
           distractors: ["夜晚","在家","睡覺","果園","！"],
@@ -5531,7 +5531,7 @@ export const LEVELS = {
         },
         {
           id: "l5m02",
-          pic: "art/story/pic_story_02.png",
+          pic: "art/story/pic_story_02.jpg",
           prompt: "請看圖，選出有用的字詞，組成一句通順的話。",
           order: ["今天","，","小明","在課室裏","認真看書","。"],
           distractors: ["夜晚","操場","踢足球","睡覺","！"],
@@ -5545,7 +5545,7 @@ export const LEVELS = {
         },
         {
           id: "l5m03",
-          pic: "art/story/pic_story_03.png",
+          pic: "art/story/pic_story_03.jpg",
           prompt: "請看圖，選出有用的字詞，組成一句通順的話。",
           order: ["晚上","，","媽媽","替我","準備晚飯","。"],
           distractors: ["早上","太陽高掛","回校","公園","！"],
@@ -5559,7 +5559,7 @@ export const LEVELS = {
         },
         {
           id: "l5m04",
-          pic: "art/story/pic_story_04.png",
+          pic: "art/story/pic_story_04.jpg",
           prompt: "請看圖，選出有用的字詞，組成一句通順的話。",
           order: ["白天","，","爸爸","在家裏","陪我做功課","。"],
           distractors: ["夜晚","操場","食飯","踢球","！"],
@@ -5573,7 +5573,7 @@ export const LEVELS = {
         },
         {
           id: "l5m05",
-          pic: "art/story/pic_story_05.png",
+          pic: "art/story/pic_story_05.jpg",
           prompt: "請看圖，選出有用的字詞，組成一句通順的話。",
           order: ["小息時","，","兩位同學","在操場","分享零食","。"],
           distractors: ["夜晚","飯廳","考試","上數學課","！"],
@@ -5587,7 +5587,7 @@ export const LEVELS = {
         },
         {
           id: "l5m06",
-          pic: "art/story/pic_story_06.png",
+          pic: "art/story/pic_story_06.jpg",
           prompt: "請看圖，選出有用的字詞，組成一句通順的話。",
           order: ["星期天","，","我","和爺爺奶奶","在公園散步","。"],
           distractors: ["夜晚","學校排隊","下雨","果園","！"],
@@ -5601,7 +5601,7 @@ export const LEVELS = {
         },
         {
           id: "l5m07",
-          pic: "art/story/pic_story_07.png",
+          pic: "art/story/pic_story_07.jpg",
           prompt: "請看圖，選出有用的字詞，組成一句通順的話。",
           order: ["下雨天","，","小明","撐着雨傘","走進學校","。"],
           distractors: ["晴天","夜晚","放學","公園","！"],
@@ -5615,7 +5615,7 @@ export const LEVELS = {
         },
         {
           id: "l5m08",
-          pic: "art/story/pic_story_08.png",
+          pic: "art/story/pic_story_08.jpg",
           prompt: "請看圖，選出有用的字詞，組成一句通順的話。",
           order: ["今天","，","小美","在圖書館","挑選圖書","。"],
           distractors: ["夜晚","操場","刷牙","踢球","！"],
@@ -5629,7 +5629,7 @@ export const LEVELS = {
         },
         {
           id: "l5m09",
-          pic: "art/story/pic_story_09.png",
+          pic: "art/story/pic_story_09.jpg",
           prompt: "請看圖，選出有用的字詞，組成一句通順的話。",
           order: ["早上","，","我","在浴室裏","刷牙","。"],
           distractors: ["夜晚臨睡","學校","食飯","睡覺","！"],
@@ -5643,7 +5643,7 @@ export const LEVELS = {
         },
         {
           id: "l5m10",
-          pic: "art/story/pic_story_10.png",
+          pic: "art/story/pic_story_10.jpg",
           prompt: "請看圖，選出有用的字詞，組成一句通順的話。",
           order: ["體育課時","，","同學們","在操場上","拍球","。"],
           distractors: ["夜晚","圖書館","看電視","睡覺","！"],
@@ -5657,7 +5657,7 @@ export const LEVELS = {
         },
         {
           id: "l5m11",
-          pic: "art/story/pic_story_11.png",
+          pic: "art/story/pic_story_11.jpg",
           prompt: "請看圖，選出有用的字詞，組成一句通順的話。",
           order: ["晚上","，","媽媽和我","在客廳","看電視","。"],
           distractors: ["早上","學校","做功課","太陽","！"],
@@ -5671,7 +5671,7 @@ export const LEVELS = {
         },
         {
           id: "l5m12",
-          pic: "art/story/pic_story_12.png",
+          pic: "art/story/pic_story_12.jpg",
           prompt: "請看圖，選出有用的字詞，組成一句通順的話。",
           order: ["早上","，","媽媽","替我","準備早餐","，","我","收拾書包","。"],
           distractors: ["夜晚","操場","撐傘回校","下雨","！"],
@@ -5685,7 +5685,7 @@ export const LEVELS = {
         },
         {
           id: "l5m13",
-          pic: "art/story/pic_story_13.png",
+          pic: "art/story/pic_story_13.jpg",
           prompt: "請看圖，選出有用的字詞，組成一句通順的話。",
           order: ["早上","，","小明","在陽台","給花兒澆水","。"],
           distractors: ["夜晚","課室","食飯","學校","！"],
@@ -5699,7 +5699,7 @@ export const LEVELS = {
         },
         {
           id: "l5m14",
-          pic: "art/story/pic_story_14.png",
+          pic: "art/story/pic_story_14.jpg",
           prompt: "請看圖，選出有用的字詞，組成一句通順的話。",
           order: ["吃飯前","，","小明","在洗手盆","洗手","。"],
           distractors: ["夜晚","操場","睡覺","踢球","！"],
@@ -5713,7 +5713,7 @@ export const LEVELS = {
         },
         {
           id: "l5m15",
-          pic: "art/story/pic_story_15.png",
+          pic: "art/story/pic_story_15.jpg",
           prompt: "請看圖，選出有用的字詞，組成一句通順的話。",
           order: ["早上","，","爸爸","牽着我的手","橫過馬路","。"],
           distractors: ["夜晚","公園","游泳","睡覺","！"],
@@ -5727,7 +5727,7 @@ export const LEVELS = {
         },
         {
           id: "l5m16",
-          pic: "art/story/pic_story_16.png",
+          pic: "art/story/pic_story_16.jpg",
           prompt: "請看圖，選出有用的字詞，組成一句通順的話。",
           order: ["星期天","，","媽媽","帶我","到市場買水果","。"],
           distractors: ["夜晚","課室","刷牙","考試","！"],
@@ -5741,7 +5741,7 @@ export const LEVELS = {
         },
         {
           id: "l5m17",
-          pic: "art/story/pic_story_17.png",
+          pic: "art/story/pic_story_17.jpg",
           prompt: "請看圖，選出有用的字詞，組成一句通順的話。",
           order: ["上課時","，","同學","在黑板上","寫字","。"],
           distractors: ["夜晚","公園","食飯","睡覺","！"],
@@ -5755,7 +5755,7 @@ export const LEVELS = {
         },
         {
           id: "l5m18",
-          pic: "art/story/pic_story_18.png",
+          pic: "art/story/pic_story_18.jpg",
           prompt: "請看圖，選出有用的字詞，組成一句通順的話。",
           order: ["音樂課時","，","同學們","跟着老師","開心唱歌","。"],
           distractors: ["夜晚","廚房","睡覺","煮飯","！"],
@@ -5769,7 +5769,7 @@ export const LEVELS = {
         },
         {
           id: "l5m19",
-          pic: "art/story/pic_story_19.png",
+          pic: "art/story/pic_story_19.jpg",
           prompt: "請看圖，選出有用的字詞，組成一句通順的話。",
           order: ["美術課時","，","小美","正在畫畫","。"],
           distractors: ["夜晚","操場","買菜","睡覺","！"],
@@ -5783,7 +5783,7 @@ export const LEVELS = {
         },
         {
           id: "l5m20",
-          pic: "art/story/pic_story_20.png",
+          pic: "art/story/pic_story_20.jpg",
           prompt: "請看圖，選出有用的字詞，組成一句通順的話。",
           order: ["下午","，","小明","在客廳裏","餵小貓吃東西","。"],
           distractors: ["夜晚","學校","排隊","考試","！"],
@@ -5797,7 +5797,7 @@ export const LEVELS = {
         },
         {
           id: "l5m21",
-          pic: "art/story/pic_story_21.png",
+          pic: "art/story/pic_story_21.jpg",
           prompt: "請看圖，選出有用的字詞，組成一句通順的話。",
           order: ["下午","，","奶奶和小妹妹","在客廳裏","摺衣服","。"],
           distractors: ["夜晚","操場","游泳","踢球","！"],
@@ -5811,7 +5811,7 @@ export const LEVELS = {
         },
         {
           id: "l5m22",
-          pic: "art/story/pic_story_22.png",
+          pic: "art/story/pic_story_22.jpg",
           prompt: "請看圖，選出有用的字詞，組成一句通順的話。",
           order: ["晚上","，","一家人","為小明","慶祝生日","。"],
           distractors: ["早上","學校","下雨上學","考試","！"],
@@ -5825,7 +5825,7 @@ export const LEVELS = {
         },
         {
           id: "l5m23",
-          pic: "art/story/pic_story_23.png",
+          pic: "art/story/pic_story_23.jpg",
           prompt: "請看圖，選出有用的字詞，組成一句通順的話。",
           order: ["早上","，","同學們","在路邊","排隊上校車","。"],
           distractors: ["夜晚","客廳","看電視","睡覺","！"],
@@ -5839,7 +5839,7 @@ export const LEVELS = {
         },
         {
           id: "l5m24",
-          pic: "art/story/pic_story_24.png",
+          pic: "art/story/pic_story_24.jpg",
           prompt: "請看圖，選出有用的字詞，組成一句通順的話。",
           order: ["早上","，","小明","背着書包","去上學","。"],
           distractors: ["夜晚","博物館","食蛋糕","睡覺","！"],
@@ -5853,7 +5853,7 @@ export const LEVELS = {
         },
         {
           id: "l5m25",
-          pic: "art/story/pic_story_25.png",
+          pic: "art/story/pic_story_25.jpg",
           prompt: "請看圖，選出有用的字詞，組成一句通順的話。",
           order: ["假日","，","爺爺","在客廳裏","看報紙","。"],
           distractors: ["夜晚","操場","踢足球","睡覺","！"],
@@ -5867,7 +5867,7 @@ export const LEVELS = {
         },
         {
           id: "l5m26",
-          pic: "art/story/pic_story_26.png",
+          pic: "art/story/pic_story_26.jpg",
           prompt: "請看圖，選出有用的字詞，組成一句通順的話。",
           order: ["早上","，","老師和同學們","在菜園裏","給蔬菜澆水","。"],
           distractors: ["夜晚","浴室","刷牙","睡覺","！"],
@@ -5881,7 +5881,7 @@ export const LEVELS = {
         },
         {
           id: "l5m27",
-          pic: "art/story/pic_story_27.png",
+          pic: "art/story/pic_story_27.jpg",
           prompt: "請看圖，選出有用的字詞，組成一句通順的話。",
           order: ["中午","，","同學們","在食堂裏","吃午餐","。"],
           distractors: ["夜晚","公園","放風箏","睡覺","！"],
@@ -5895,7 +5895,7 @@ export const LEVELS = {
         },
         {
           id: "l5m28",
-          pic: "art/story/pic_story_28.png",
+          pic: "art/story/pic_story_28.jpg",
           prompt: "請看圖，選出有用的字詞，組成一句通順的話。",
           order: ["早上","，","媽媽和我","一起","準備午餐","。"],
           distractors: ["夜晚","圖書館","唱歌","睡覺","！"],
@@ -5909,7 +5909,7 @@ export const LEVELS = {
         },
         {
           id: "l5m29",
-          pic: "art/story/pic_story_29.png",
+          pic: "art/story/pic_story_29.jpg",
           prompt: "請看圖，選出有用的字詞，組成一句通順的話。",
           order: ["今天","，","媽媽","帶我","到診所看醫生","。"],
           distractors: ["夜晚","操場","踢球","睡覺","！"],
@@ -5923,7 +5923,7 @@ export const LEVELS = {
         },
         {
           id: "l5m30",
-          pic: "art/story/pic_story_30.png",
+          pic: "art/story/pic_story_30.jpg",
           prompt: "請看圖，選出有用的字詞，組成一句通順的話。",
           order: ["下午","，","爸爸","陪我","在家裏下棋","。"],
           distractors: ["夜晚","食堂","吃飯","睡覺","！"],
@@ -5937,7 +5937,7 @@ export const LEVELS = {
         },
         {
           id: "l5m31",
-          pic: "art/story/pic_story_31.png",
+          pic: "art/story/pic_story_31.jpg",
           prompt: "請看圖，選出有用的字詞，組成一句通順的話。",
           order: ["小息後","，","同學們","在課室裏","清潔","。"],
           distractors: ["夜晚","公園","放風箏","睡覺","！"],
@@ -5951,7 +5951,7 @@ export const LEVELS = {
         },
         {
           id: "l5m32",
-          pic: "art/story/pic_story_32.png",
+          pic: "art/story/pic_story_32.jpg",
           prompt: "請看圖，選出有用的字詞，組成一句通順的話。",
           order: ["早上","，","同學們","參加升旗禮","。"],
           distractors: ["夜晚","廚房","煮飯","睡覺","！"],
@@ -5965,7 +5965,7 @@ export const LEVELS = {
         },
         {
           id: "l5m33",
-          pic: "art/story/pic_story_33.png",
+          pic: "art/story/pic_story_33.jpg",
           prompt: "請看圖，選出有用的字詞，組成一句通順的話。",
           order: ["體育課時","，","同學們","在泳池","游泳","。"],
           distractors: ["夜晚","課室","寫字","睡覺","！"],
@@ -5979,7 +5979,7 @@ export const LEVELS = {
         },
         {
           id: "l5m34",
-          pic: "art/story/pic_story_34.png",
+          pic: "art/story/pic_story_34.jpg",
           prompt: "請看圖，選出有用的字詞，組成一句通順的話。",
           order: ["星期天","，","我","在陽台","替花盆播種","。"],
           distractors: ["夜晚","操場","跑步","睡覺","！"],
@@ -5993,7 +5993,7 @@ export const LEVELS = {
         },
         {
           id: "l5m35",
-          pic: "art/story/pic_story_35.png",
+          pic: "art/story/pic_story_35.jpg",
           prompt: "請看圖，選出有用的字詞，組成一句通順的話。",
           order: ["晚上","，","我","和爺爺奶奶","視像通話","。"],
           distractors: ["早上","街市","買水果","太陽","！"],
@@ -6007,7 +6007,7 @@ export const LEVELS = {
         },
         {
           id: "l5m36",
-          pic: "art/story/pic_story_36.png",
+          pic: "art/story/pic_story_36.jpg",
           prompt: "請看圖，選出有用的字詞，組成一句通順的話。",
           order: ["放學後","，","媽媽","帶我","到文具店買文具","。"],
           distractors: ["夜晚","泳池","游泳","睡覺","！"],
@@ -6021,7 +6021,7 @@ export const LEVELS = {
         },
         {
           id: "l5m37",
-          pic: "art/story/pic_story_37.png",
+          pic: "art/story/pic_story_37.jpg",
           prompt: "請看圖，選出有用的字詞，組成一句通順的話。",
           order: ["早上","，","我","在公園裏","遛狗","。"],
           distractors: ["夜晚","課室","考試","睡覺","！"],
@@ -6035,7 +6035,7 @@ export const LEVELS = {
         },
         {
           id: "l5m38",
-          pic: "art/story/pic_story_38.png",
+          pic: "art/story/pic_story_38.jpg",
           prompt: "請看圖，選出有用的字詞，組成一句通順的話。",
           order: ["下午","，","我","幫忙","提着購物袋回家","。"],
           distractors: ["夜晚","音樂室","唱歌","睡覺","！"],
@@ -6049,7 +6049,7 @@ export const LEVELS = {
         },
         {
           id: "l5m39",
-          pic: "art/story/pic_story_39.png",
+          pic: "art/story/pic_story_39.jpg",
           prompt: "請看圖，選出有用的字詞，組成一句通順的話。",
           order: ["下午","，","我","在家裏","練習彈鋼琴","。"],
           distractors: ["夜晚","操場","踢足球","睡覺","！"],
@@ -6063,7 +6063,7 @@ export const LEVELS = {
         },
         {
           id: "l5m40",
-          pic: "art/story/pic_story_40.png",
+          pic: "art/story/pic_story_40.jpg",
           prompt: "請看圖，選出有用的字詞，組成一句通順的話。",
           order: ["科學課時","，","同學們","在做實驗","。"],
           distractors: ["夜晚","廚房","煮麵","睡覺","！"],
@@ -6077,7 +6077,7 @@ export const LEVELS = {
         },
         {
           id: "l5m41",
-          pic: "art/story/pic_story_41.png",
+          pic: "art/story/pic_story_41.jpg",
           prompt: "請看圖，選出有用的字詞，組成一句通順的話。",
           order: ["晚上","，","小男孩","在家裏","專心地寫日記","。"],
           distractors: ["早上","操場","踢球","太陽","！"],
@@ -6091,7 +6091,7 @@ export const LEVELS = {
         },
         {
           id: "l5m42",
-          pic: "art/story/pic_story_42.png",
+          pic: "art/story/pic_story_42.jpg",
           prompt: "請看圖，選出有用的字詞，組成一句通順的話。",
           order: ["星期天","，","我們","在公園裏","放風箏","。"],
           distractors: ["夜晚","課室","寫黑板","睡覺","！"],
@@ -6105,7 +6105,7 @@ export const LEVELS = {
         },
         {
           id: "l5m43",
-          pic: "art/story/pic_story_43.png",
+          pic: "art/story/pic_story_43.jpg",
           prompt: "請看圖，選出有用的字詞，組成一句通順的話。",
           order: ["今天","，","老師","帶我們","到博物館參觀","。"],
           distractors: ["夜晚","浴室","刷牙","睡覺","！"],
@@ -6119,7 +6119,7 @@ export const LEVELS = {
         },
         {
           id: "l5m44",
-          pic: "art/story/pic_story_44.png",
+          pic: "art/story/pic_story_44.jpg",
           prompt: "請看圖，選出有用的字詞，組成一句通順的話。",
           order: ["早上","，","小美","在廚房裏","做三明治","。"],
           distractors: ["夜晚","操場","升旗","睡覺","！"],
@@ -6133,7 +6133,7 @@ export const LEVELS = {
         },
         {
           id: "l5m45",
-          pic: "art/story/pic_story_45.png",
+          pic: "art/story/pic_story_45.jpg",
           prompt: "請看圖，選出有用的字詞，組成一句通順的話。",
           order: ["早上","，","小明","在門口","穿鞋準備上學","。"],
           distractors: ["夜晚","食堂","吃飯","睡覺","！"],
@@ -6147,7 +6147,7 @@ export const LEVELS = {
         },
         {
           id: "l5m46",
-          pic: "art/story/pic_story_46.png",
+          pic: "art/story/pic_story_46.jpg",
           prompt: "請看圖，選出有用的字詞，組成一句通順的話。",
           order: ["早上","，","小美","在窗台","給盆栽澆水","。"],
           distractors: ["夜晚","泳池","游泳","睡覺","！"],
@@ -6161,7 +6161,7 @@ export const LEVELS = {
         },
         {
           id: "l5m47",
-          pic: "art/story/pic_story_47.png",
+          pic: "art/story/pic_story_47.jpg",
           prompt: "請看圖，選出有用的字詞，組成一句通順的話。",
           order: ["教師節","，","小明","送花給老師","。"],
           distractors: ["夜晚","廚房","洗碗","睡覺","！"],
@@ -6175,7 +6175,7 @@ export const LEVELS = {
         },
         {
           id: "l5m48",
-          pic: "art/story/pic_story_48.png",
+          pic: "art/story/pic_story_48.jpg",
           prompt: "請看圖，選出有用的字詞，組成一句通順的話。",
           order: ["小息時","，","同學們","在課室","做垃圾分類","。"],
           distractors: ["夜晚","公園","放風箏","睡覺","！"],
@@ -6189,7 +6189,7 @@ export const LEVELS = {
         },
         {
           id: "l5m49",
-          pic: "art/story/pic_story_49.png",
+          pic: "art/story/pic_story_49.jpg",
           prompt: "請看圖，選出有用的字詞，組成一句通順的話。",
           order: ["星期天","，","我們","帶水果","去探望爺爺嫲嫲","。"],
           distractors: ["夜晚","科學室","實驗","睡覺","！"],
@@ -6203,7 +6203,7 @@ export const LEVELS = {
         },
         {
           id: "l5m50",
-          pic: "art/story/pic_story_50.png",
+          pic: "art/story/pic_story_50.jpg",
           prompt: "請看圖，選出有用的字詞，組成一句通順的話。",
           order: ["今天","，","媽媽","帶我","到書店挑選故事書","。"],
           distractors: ["夜晚","操場","跑接力","睡覺","！"],
@@ -6219,7 +6219,7 @@ export const LEVELS = {
       hard: [
         {
           id: "l5h01",
-          pic: "art/story/pic_story_01.png",
+          pic: "art/story/pic_story_01.jpg",
           prompt: "請看圖，選出有用的字詞，組成一句通順的話。",
           order: ["早上","，","同學們","在學校門口","整齊排隊","。"],
           distractors: ["夜晚","在家","睡覺","果園","！","？","採蘋果","半夜"],
@@ -6233,7 +6233,7 @@ export const LEVELS = {
         },
         {
           id: "l5h02",
-          pic: "art/story/pic_story_02.png",
+          pic: "art/story/pic_story_02.jpg",
           prompt: "請看圖，選出有用的字詞，組成一句通順的話。",
           order: ["今天","，","小明","在課室裏","認真看書","。"],
           distractors: ["夜晚","操場","踢足球","睡覺","！","？","採蘋果","果園"],
@@ -6247,7 +6247,7 @@ export const LEVELS = {
         },
         {
           id: "l5h03",
-          pic: "art/story/pic_story_03.png",
+          pic: "art/story/pic_story_03.jpg",
           prompt: "請看圖，選出有用的字詞，組成一句通順的話。",
           order: ["晚上","，","媽媽","替我","準備晚飯","。"],
           distractors: ["早上","太陽高掛","回校","公園","！","？","採蘋果","果園"],
@@ -6261,7 +6261,7 @@ export const LEVELS = {
         },
         {
           id: "l5h04",
-          pic: "art/story/pic_story_04.png",
+          pic: "art/story/pic_story_04.jpg",
           prompt: "請看圖，選出有用的字詞，組成一句通順的話。",
           order: ["白天","，","爸爸","在家裏","陪我做功課","。"],
           distractors: ["夜晚","操場","食飯","踢球","！","？","採蘋果","果園"],
@@ -6275,7 +6275,7 @@ export const LEVELS = {
         },
         {
           id: "l5h05",
-          pic: "art/story/pic_story_05.png",
+          pic: "art/story/pic_story_05.jpg",
           prompt: "請看圖，選出有用的字詞，組成一句通順的話。",
           order: ["小息時","，","兩位同學","在操場","分享零食","。"],
           distractors: ["夜晚","飯廳","考試","上數學課","！","？","採蘋果","果園"],
@@ -6289,7 +6289,7 @@ export const LEVELS = {
         },
         {
           id: "l5h06",
-          pic: "art/story/pic_story_06.png",
+          pic: "art/story/pic_story_06.jpg",
           prompt: "請看圖，選出有用的字詞，組成一句通順的話。",
           order: ["星期天","，","我","和爺爺奶奶","在公園散步","。"],
           distractors: ["夜晚","學校排隊","下雨","果園","！","？","採蘋果","半夜"],
@@ -6303,7 +6303,7 @@ export const LEVELS = {
         },
         {
           id: "l5h07",
-          pic: "art/story/pic_story_07.png",
+          pic: "art/story/pic_story_07.jpg",
           prompt: "請看圖，選出有用的字詞，組成一句通順的話。",
           order: ["下雨天","，","小明","撐着雨傘","走進學校","。"],
           distractors: ["晴天","夜晚","放學","公園","！","？","採蘋果","果園"],
@@ -6317,7 +6317,7 @@ export const LEVELS = {
         },
         {
           id: "l5h08",
-          pic: "art/story/pic_story_08.png",
+          pic: "art/story/pic_story_08.jpg",
           prompt: "請看圖，選出有用的字詞，組成一句通順的話。",
           order: ["今天","，","小美","在圖書館","挑選圖書","。"],
           distractors: ["夜晚","操場","刷牙","踢球","！","？","採蘋果","果園"],
@@ -6331,7 +6331,7 @@ export const LEVELS = {
         },
         {
           id: "l5h09",
-          pic: "art/story/pic_story_09.png",
+          pic: "art/story/pic_story_09.jpg",
           prompt: "請看圖，選出有用的字詞，組成一句通順的話。",
           order: ["早上","，","我","在浴室裏","刷牙","。"],
           distractors: ["夜晚臨睡","學校","食飯","睡覺","！","？","採蘋果","果園"],
@@ -6345,7 +6345,7 @@ export const LEVELS = {
         },
         {
           id: "l5h10",
-          pic: "art/story/pic_story_10.png",
+          pic: "art/story/pic_story_10.jpg",
           prompt: "請看圖，選出有用的字詞，組成一句通順的話。",
           order: ["體育課時","，","同學們","在操場上","拍球","。"],
           distractors: ["夜晚","圖書館","看電視","睡覺","！","？","採蘋果","果園"],
@@ -6359,7 +6359,7 @@ export const LEVELS = {
         },
         {
           id: "l5h11",
-          pic: "art/story/pic_story_11.png",
+          pic: "art/story/pic_story_11.jpg",
           prompt: "請看圖，選出有用的字詞，組成一句通順的話。",
           order: ["晚上","，","媽媽和我","在客廳","看電視","。"],
           distractors: ["早上","學校","做功課","太陽","！","？","採蘋果","果園"],
@@ -6373,7 +6373,7 @@ export const LEVELS = {
         },
         {
           id: "l5h12",
-          pic: "art/story/pic_story_12.png",
+          pic: "art/story/pic_story_12.jpg",
           prompt: "請看圖，選出有用的字詞，組成一句通順的話。",
           order: ["早上","，","媽媽","替我","準備早餐","，","我","收拾書包","。"],
           distractors: ["夜晚","操場","撐傘回校","下雨","！","？","採蘋果","果園"],
@@ -6387,7 +6387,7 @@ export const LEVELS = {
         },
         {
           id: "l5h13",
-          pic: "art/story/pic_story_13.png",
+          pic: "art/story/pic_story_13.jpg",
           prompt: "請看圖，選出有用的字詞，組成一句通順的話。",
           order: ["早上","，","小明","在陽台","給花兒澆水","。"],
           distractors: ["夜晚","課室","食飯","學校","！","？","採蘋果","果園"],
@@ -6401,7 +6401,7 @@ export const LEVELS = {
         },
         {
           id: "l5h14",
-          pic: "art/story/pic_story_14.png",
+          pic: "art/story/pic_story_14.jpg",
           prompt: "請看圖，選出有用的字詞，組成一句通順的話。",
           order: ["吃飯前","，","小明","在洗手盆","洗手","。"],
           distractors: ["夜晚","操場","睡覺","踢球","！","？","採蘋果","果園"],
@@ -6415,7 +6415,7 @@ export const LEVELS = {
         },
         {
           id: "l5h15",
-          pic: "art/story/pic_story_15.png",
+          pic: "art/story/pic_story_15.jpg",
           prompt: "請看圖，選出有用的字詞，組成一句通順的話。",
           order: ["早上","，","爸爸","牽着我的手","橫過馬路","。"],
           distractors: ["夜晚","公園","游泳","睡覺","！","？","採蘋果","果園"],
@@ -6429,7 +6429,7 @@ export const LEVELS = {
         },
         {
           id: "l5h16",
-          pic: "art/story/pic_story_16.png",
+          pic: "art/story/pic_story_16.jpg",
           prompt: "請看圖，選出有用的字詞，組成一句通順的話。",
           order: ["星期天","，","媽媽","帶我","到市場買水果","。"],
           distractors: ["夜晚","課室","刷牙","考試","！","？","採蘋果","果園"],
@@ -6443,7 +6443,7 @@ export const LEVELS = {
         },
         {
           id: "l5h17",
-          pic: "art/story/pic_story_17.png",
+          pic: "art/story/pic_story_17.jpg",
           prompt: "請看圖，選出有用的字詞，組成一句通順的話。",
           order: ["上課時","，","同學","在黑板上","寫字","。"],
           distractors: ["夜晚","公園","食飯","睡覺","！","？","採蘋果","果園"],
@@ -6457,7 +6457,7 @@ export const LEVELS = {
         },
         {
           id: "l5h18",
-          pic: "art/story/pic_story_18.png",
+          pic: "art/story/pic_story_18.jpg",
           prompt: "請看圖，選出有用的字詞，組成一句通順的話。",
           order: ["音樂課時","，","同學們","跟着老師","開心唱歌","。"],
           distractors: ["夜晚","廚房","睡覺","煮飯","！","？","採蘋果","果園"],
@@ -6471,7 +6471,7 @@ export const LEVELS = {
         },
         {
           id: "l5h19",
-          pic: "art/story/pic_story_19.png",
+          pic: "art/story/pic_story_19.jpg",
           prompt: "請看圖，選出有用的字詞，組成一句通順的話。",
           order: ["美術課時","，","小美","正在畫畫","。"],
           distractors: ["夜晚","操場","買菜","睡覺","！","？","採蘋果","果園"],
@@ -6485,7 +6485,7 @@ export const LEVELS = {
         },
         {
           id: "l5h20",
-          pic: "art/story/pic_story_20.png",
+          pic: "art/story/pic_story_20.jpg",
           prompt: "請看圖，選出有用的字詞，組成一句通順的話。",
           order: ["下午","，","小明","在客廳裏","餵小貓吃東西","。"],
           distractors: ["夜晚","學校","排隊","考試","！","？","採蘋果","果園"],
@@ -6499,7 +6499,7 @@ export const LEVELS = {
         },
         {
           id: "l5h21",
-          pic: "art/story/pic_story_21.png",
+          pic: "art/story/pic_story_21.jpg",
           prompt: "請看圖，選出有用的字詞，組成一句通順的話。",
           order: ["下午","，","奶奶和小妹妹","在客廳裏","摺衣服","。"],
           distractors: ["夜晚","操場","游泳","踢球","！","？","採蘋果","果園"],
@@ -6513,7 +6513,7 @@ export const LEVELS = {
         },
         {
           id: "l5h22",
-          pic: "art/story/pic_story_22.png",
+          pic: "art/story/pic_story_22.jpg",
           prompt: "請看圖，選出有用的字詞，組成一句通順的話。",
           order: ["晚上","，","一家人","為小明","慶祝生日","。"],
           distractors: ["早上","學校","下雨上學","考試","！","？","採蘋果","果園"],
@@ -6527,7 +6527,7 @@ export const LEVELS = {
         },
         {
           id: "l5h23",
-          pic: "art/story/pic_story_23.png",
+          pic: "art/story/pic_story_23.jpg",
           prompt: "請看圖，選出有用的字詞，組成一句通順的話。",
           order: ["早上","，","同學們","在路邊","排隊上校車","。"],
           distractors: ["夜晚","客廳","看電視","睡覺","！","？","採蘋果","果園"],
@@ -6541,7 +6541,7 @@ export const LEVELS = {
         },
         {
           id: "l5h24",
-          pic: "art/story/pic_story_24.png",
+          pic: "art/story/pic_story_24.jpg",
           prompt: "請看圖，選出有用的字詞，組成一句通順的話。",
           order: ["早上","，","小明","背着書包","去上學","。"],
           distractors: ["夜晚","博物館","食蛋糕","睡覺","！","？","採蘋果","果園"],
@@ -6555,7 +6555,7 @@ export const LEVELS = {
         },
         {
           id: "l5h25",
-          pic: "art/story/pic_story_25.png",
+          pic: "art/story/pic_story_25.jpg",
           prompt: "請看圖，選出有用的字詞，組成一句通順的話。",
           order: ["假日","，","爺爺","在客廳裏","看報紙","。"],
           distractors: ["夜晚","操場","踢足球","睡覺","！","？","採蘋果","果園"],
@@ -6569,7 +6569,7 @@ export const LEVELS = {
         },
         {
           id: "l5h26",
-          pic: "art/story/pic_story_26.png",
+          pic: "art/story/pic_story_26.jpg",
           prompt: "請看圖，選出有用的字詞，組成一句通順的話。",
           order: ["早上","，","老師和同學們","在菜園裏","給蔬菜澆水","。"],
           distractors: ["夜晚","浴室","刷牙","睡覺","！","？","採蘋果","果園"],
@@ -6583,7 +6583,7 @@ export const LEVELS = {
         },
         {
           id: "l5h27",
-          pic: "art/story/pic_story_27.png",
+          pic: "art/story/pic_story_27.jpg",
           prompt: "請看圖，選出有用的字詞，組成一句通順的話。",
           order: ["中午","，","同學們","在食堂裏","吃午餐","。"],
           distractors: ["夜晚","公園","放風箏","睡覺","！","？","採蘋果","果園"],
@@ -6597,7 +6597,7 @@ export const LEVELS = {
         },
         {
           id: "l5h28",
-          pic: "art/story/pic_story_28.png",
+          pic: "art/story/pic_story_28.jpg",
           prompt: "請看圖，選出有用的字詞，組成一句通順的話。",
           order: ["早上","，","媽媽和我","一起","準備午餐","。"],
           distractors: ["夜晚","圖書館","唱歌","睡覺","！","？","採蘋果","果園"],
@@ -6611,7 +6611,7 @@ export const LEVELS = {
         },
         {
           id: "l5h29",
-          pic: "art/story/pic_story_29.png",
+          pic: "art/story/pic_story_29.jpg",
           prompt: "請看圖，選出有用的字詞，組成一句通順的話。",
           order: ["今天","，","媽媽","帶我","到診所看醫生","。"],
           distractors: ["夜晚","操場","踢球","睡覺","！","？","採蘋果","果園"],
@@ -6625,7 +6625,7 @@ export const LEVELS = {
         },
         {
           id: "l5h30",
-          pic: "art/story/pic_story_30.png",
+          pic: "art/story/pic_story_30.jpg",
           prompt: "請看圖，選出有用的字詞，組成一句通順的話。",
           order: ["下午","，","爸爸","陪我","在家裏下棋","。"],
           distractors: ["夜晚","食堂","吃飯","睡覺","！","？","採蘋果","果園"],
@@ -6639,7 +6639,7 @@ export const LEVELS = {
         },
         {
           id: "l5h31",
-          pic: "art/story/pic_story_31.png",
+          pic: "art/story/pic_story_31.jpg",
           prompt: "請看圖，選出有用的字詞，組成一句通順的話。",
           order: ["小息後","，","同學們","在課室裏","清潔","。"],
           distractors: ["夜晚","公園","放風箏","睡覺","！","？","採蘋果","果園"],
@@ -6653,7 +6653,7 @@ export const LEVELS = {
         },
         {
           id: "l5h32",
-          pic: "art/story/pic_story_32.png",
+          pic: "art/story/pic_story_32.jpg",
           prompt: "請看圖，選出有用的字詞，組成一句通順的話。",
           order: ["早上","，","同學們","參加升旗禮","。"],
           distractors: ["夜晚","廚房","煮飯","睡覺","！","？","採蘋果","果園"],
@@ -6667,7 +6667,7 @@ export const LEVELS = {
         },
         {
           id: "l5h33",
-          pic: "art/story/pic_story_33.png",
+          pic: "art/story/pic_story_33.jpg",
           prompt: "請看圖，選出有用的字詞，組成一句通順的話。",
           order: ["體育課時","，","同學們","在泳池","游泳","。"],
           distractors: ["夜晚","課室","寫字","睡覺","！","？","採蘋果","果園"],
@@ -6681,7 +6681,7 @@ export const LEVELS = {
         },
         {
           id: "l5h34",
-          pic: "art/story/pic_story_34.png",
+          pic: "art/story/pic_story_34.jpg",
           prompt: "請看圖，選出有用的字詞，組成一句通順的話。",
           order: ["星期天","，","我","在陽台","替花盆播種","。"],
           distractors: ["夜晚","操場","跑步","睡覺","！","？","採蘋果","果園"],
@@ -6695,7 +6695,7 @@ export const LEVELS = {
         },
         {
           id: "l5h35",
-          pic: "art/story/pic_story_35.png",
+          pic: "art/story/pic_story_35.jpg",
           prompt: "請看圖，選出有用的字詞，組成一句通順的話。",
           order: ["晚上","，","我","和爺爺奶奶","視像通話","。"],
           distractors: ["早上","街市","買水果","太陽","！","？","採蘋果","果園"],
@@ -6709,7 +6709,7 @@ export const LEVELS = {
         },
         {
           id: "l5h36",
-          pic: "art/story/pic_story_36.png",
+          pic: "art/story/pic_story_36.jpg",
           prompt: "請看圖，選出有用的字詞，組成一句通順的話。",
           order: ["放學後","，","媽媽","帶我","到文具店買文具","。"],
           distractors: ["夜晚","泳池","游泳","睡覺","！","？","採蘋果","果園"],
@@ -6723,7 +6723,7 @@ export const LEVELS = {
         },
         {
           id: "l5h37",
-          pic: "art/story/pic_story_37.png",
+          pic: "art/story/pic_story_37.jpg",
           prompt: "請看圖，選出有用的字詞，組成一句通順的話。",
           order: ["早上","，","我","在公園裏","遛狗","。"],
           distractors: ["夜晚","課室","考試","睡覺","！","？","採蘋果","果園"],
@@ -6737,7 +6737,7 @@ export const LEVELS = {
         },
         {
           id: "l5h38",
-          pic: "art/story/pic_story_38.png",
+          pic: "art/story/pic_story_38.jpg",
           prompt: "請看圖，選出有用的字詞，組成一句通順的話。",
           order: ["下午","，","我","幫忙","提着購物袋回家","。"],
           distractors: ["夜晚","音樂室","唱歌","睡覺","！","？","採蘋果","果園"],
@@ -6751,7 +6751,7 @@ export const LEVELS = {
         },
         {
           id: "l5h39",
-          pic: "art/story/pic_story_39.png",
+          pic: "art/story/pic_story_39.jpg",
           prompt: "請看圖，選出有用的字詞，組成一句通順的話。",
           order: ["下午","，","我","在家裏","練習彈鋼琴","。"],
           distractors: ["夜晚","操場","踢足球","睡覺","！","？","採蘋果","果園"],
@@ -6765,7 +6765,7 @@ export const LEVELS = {
         },
         {
           id: "l5h40",
-          pic: "art/story/pic_story_40.png",
+          pic: "art/story/pic_story_40.jpg",
           prompt: "請看圖，選出有用的字詞，組成一句通順的話。",
           order: ["科學課時","，","同學們","在做實驗","。"],
           distractors: ["夜晚","廚房","煮麵","睡覺","！","？","採蘋果","果園"],
@@ -6779,7 +6779,7 @@ export const LEVELS = {
         },
         {
           id: "l5h41",
-          pic: "art/story/pic_story_41.png",
+          pic: "art/story/pic_story_41.jpg",
           prompt: "請看圖，選出有用的字詞，組成一句通順的話。",
           order: ["晚上","，","小男孩","在家裏","專心地寫日記","。"],
           distractors: ["早上","操場","踢球","太陽","！","？","採蘋果","果園"],
@@ -6793,7 +6793,7 @@ export const LEVELS = {
         },
         {
           id: "l5h42",
-          pic: "art/story/pic_story_42.png",
+          pic: "art/story/pic_story_42.jpg",
           prompt: "請看圖，選出有用的字詞，組成一句通順的話。",
           order: ["星期天","，","我們","在公園裏","放風箏","。"],
           distractors: ["夜晚","課室","寫黑板","睡覺","！","？","採蘋果","果園"],
@@ -6807,7 +6807,7 @@ export const LEVELS = {
         },
         {
           id: "l5h43",
-          pic: "art/story/pic_story_43.png",
+          pic: "art/story/pic_story_43.jpg",
           prompt: "請看圖，選出有用的字詞，組成一句通順的話。",
           order: ["今天","，","老師","帶我們","到博物館參觀","。"],
           distractors: ["夜晚","浴室","刷牙","睡覺","！","？","採蘋果","果園"],
@@ -6821,7 +6821,7 @@ export const LEVELS = {
         },
         {
           id: "l5h44",
-          pic: "art/story/pic_story_44.png",
+          pic: "art/story/pic_story_44.jpg",
           prompt: "請看圖，選出有用的字詞，組成一句通順的話。",
           order: ["早上","，","小美","在廚房裏","做三明治","。"],
           distractors: ["夜晚","操場","升旗","睡覺","！","？","採蘋果","果園"],
@@ -6835,7 +6835,7 @@ export const LEVELS = {
         },
         {
           id: "l5h45",
-          pic: "art/story/pic_story_45.png",
+          pic: "art/story/pic_story_45.jpg",
           prompt: "請看圖，選出有用的字詞，組成一句通順的話。",
           order: ["早上","，","小明","在門口","穿鞋準備上學","。"],
           distractors: ["夜晚","食堂","吃飯","睡覺","！","？","採蘋果","果園"],
@@ -6849,7 +6849,7 @@ export const LEVELS = {
         },
         {
           id: "l5h46",
-          pic: "art/story/pic_story_46.png",
+          pic: "art/story/pic_story_46.jpg",
           prompt: "請看圖，選出有用的字詞，組成一句通順的話。",
           order: ["早上","，","小美","在窗台","給盆栽澆水","。"],
           distractors: ["夜晚","泳池","游泳","睡覺","！","？","採蘋果","果園"],
@@ -6863,7 +6863,7 @@ export const LEVELS = {
         },
         {
           id: "l5h47",
-          pic: "art/story/pic_story_47.png",
+          pic: "art/story/pic_story_47.jpg",
           prompt: "請看圖，選出有用的字詞，組成一句通順的話。",
           order: ["教師節","，","小明","送花給老師","。"],
           distractors: ["夜晚","廚房","洗碗","睡覺","！","？","採蘋果","果園"],
@@ -6877,7 +6877,7 @@ export const LEVELS = {
         },
         {
           id: "l5h48",
-          pic: "art/story/pic_story_48.png",
+          pic: "art/story/pic_story_48.jpg",
           prompt: "請看圖，選出有用的字詞，組成一句通順的話。",
           order: ["小息時","，","同學們","在課室","做垃圾分類","。"],
           distractors: ["夜晚","公園","放風箏","睡覺","！","？","採蘋果","果園"],
@@ -6891,7 +6891,7 @@ export const LEVELS = {
         },
         {
           id: "l5h49",
-          pic: "art/story/pic_story_49.png",
+          pic: "art/story/pic_story_49.jpg",
           prompt: "請看圖，選出有用的字詞，組成一句通順的話。",
           order: ["星期天","，","我們","帶水果","去探望爺爺嫲嫲","。"],
           distractors: ["夜晚","科學室","實驗","睡覺","！","？","採蘋果","果園"],
@@ -6905,7 +6905,7 @@ export const LEVELS = {
         },
         {
           id: "l5h50",
-          pic: "art/story/pic_story_50.png",
+          pic: "art/story/pic_story_50.jpg",
           prompt: "請看圖，選出有用的字詞，組成一句通順的話。",
           order: ["今天","，","媽媽","帶我","到書店挑選故事書","。"],
           distractors: ["夜晚","操場","跑接力","睡覺","！","？","採蘋果","果園"],

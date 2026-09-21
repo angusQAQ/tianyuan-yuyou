@@ -451,9 +451,95 @@ function ensureTtsCached(_text, _voice) {
 function preloadLevelTts(_item, _level) {
   return;
 }
+
 // R16：enqueueSpeakTts／pumpSpeakTtsChunks／preloadSpeakTts 已刪除（禁止呼叫）
 
+/** R36：故事圖 jpg 優先、png fallback；非阻塞載入＋預載下一題 */
+const storyPicResolved = new Map(); // logical path → resolved url
+let storyPicLoadGen = 0;
 
+function storyPicCandidates(picPath) {
+  if (!picPath) return [];
+  const s = String(picPath);
+  if (/\.jpe?g$/i.test(s)) {
+    return [s, s.replace(/\.jpe?g$/i, '.png')];
+  }
+  if (/\.png$/i.test(s)) {
+    return [s.replace(/\.png$/i, '.jpg'), s];
+  }
+  return [`${s}.jpg`, `${s}.png`, s];
+}
+
+function preloadStoryPic(picPath) {
+  if (!picPath) return Promise.resolve(null);
+  const key = String(picPath);
+  const cached = storyPicResolved.get(key);
+  if (typeof cached === 'string') return Promise.resolve(cached);
+  if (cached && typeof cached.then === 'function') return cached;
+  const urls = storyPicCandidates(key);
+  const p = new Promise((resolve) => {
+    let i = 0;
+    const tryNext = () => {
+      if (i >= urls.length) {
+        storyPicResolved.delete(key);
+        resolve(null);
+        return;
+      }
+      const url = urls[i++];
+      const img = new Image();
+      img.onload = () => {
+        storyPicResolved.set(key, url);
+        resolve(url);
+      };
+      img.onerror = () => tryNext();
+      img.src = url;
+    };
+    tryNext();
+  });
+  storyPicResolved.set(key, p);
+  return p;
+}
+
+function setStoryPic(picPath) {
+  if (!storyPic) return;
+  const gen = ++storyPicLoadGen;
+  storyPic.classList.add('is-loading');
+  storyPic.alt = '故事圖載入中';
+  // 唔清舊 src，避免長卡白屏；新圖 ready 先換
+  preloadStoryPic(picPath).then((url) => {
+    if (gen !== storyPicLoadGen) return;
+    if (url) {
+      storyPic.src = url;
+      storyPic.alt = '故事圖';
+    } else {
+      storyPic.removeAttribute('src');
+      storyPic.alt = '故事圖';
+    }
+    storyPic.classList.remove('is-loading');
+  });
+}
+
+function clearStoryPic() {
+  storyPicLoadGen += 1;
+  if (!storyPic) return;
+  storyPic.classList.remove('is-loading');
+  storyPic.removeAttribute('src');
+  storyPic.alt = '故事圖';
+}
+
+function preloadUpcomingStoryPics() {
+  if (state.levelId !== 'L5_picture_sentence') return;
+  const level = LEVELS[state.levelId];
+  const items = activeRunItems();
+  const end = Math.min(items.length, state.itemIndex + 3);
+  for (let i = state.itemIndex + 1; i < end; i++) {
+    const raw = items[i];
+    try {
+      const item = resolveItem(level, raw, state.difficulty);
+      if (item?.pic) preloadStoryPic(item.pic);
+    } catch (_) {}
+  }
+}
 
 function showLoading() {
   if (!loadingEl) return;
@@ -1327,6 +1413,16 @@ function enterLevel(levelId) {
     npcPortrait.src = level.id === 'L2_reorder_sentence' ? (NPC_IMG.fisherman || NPC_IMG.male) : (NPC_IMG[level.voice] || NPC_IMG.farmer || NPC_IMG.primary);
   }
   goalEl.textContent = activeSpots().find((s) => s.levelId === levelId)?.name || level.goal;
+  if (levelId === 'L5_picture_sentence') {
+    // 進關即預載首幾題 JPG（唔阻 render）
+    const run = state.runItems || [];
+    for (let i = 0; i < Math.min(3, run.length); i++) {
+      try {
+        const it = resolveItem(level, run[i], state.difficulty);
+        if (it?.pic) preloadStoryPic(it.pic);
+      } catch (_) {}
+    }
+  }
   renderItem();
   layoutKidOnSpot();
   if (kidMesh) kidMesh.visible = true;
@@ -1359,9 +1455,12 @@ function renderItem() {
   tilesEl.innerHTML = '';
   slotsEl.innerHTML = '';
   if (sentenceCharsEl) sentenceCharsEl.innerHTML = '';
-  if (storyZone) storyZone.classList.add('hidden');
-  if (storyPic) { storyPic.removeAttribute('src'); storyPic.alt = '故事圖'; }
-  if (levelPanel) levelPanel.classList.remove('has-story');
+  const willShowPic = state.levelId === 'L5_picture_sentence' && item?.pic;
+  if (storyZone && !willShowPic) storyZone.classList.add('hidden');
+  if (!willShowPic) {
+    clearStoryPic();
+    if (levelPanel) levelPanel.classList.remove('has-story');
+  }
   slotZone.classList.add('hidden');
   poolZone.classList.remove('sentences');
   slotZone.classList.remove('sentences');
@@ -1410,9 +1509,10 @@ function renderItem() {
     const isReorder = state.levelId === 'L2_reorder_sentence' || isPara || isPic;
     if (isPic && storyZone && storyPic && item.pic) {
       storyZone.classList.remove('hidden');
-      storyPic.src = item.pic;
-      storyPic.alt = '故事圖';
+      setStoryPic(item.pic);
       if (levelPanel) levelPanel.classList.add('has-story');
+      // 非阻塞：開題即顯示字塊／空格；背景預載下一～兩題
+      preloadUpcomingStoryPics();
     } else if (levelPanel) {
       levelPanel.classList.remove('has-story');
     }
@@ -2051,6 +2151,19 @@ try {
     load: loadWrongBook,
     clear: () => { saveWrongBook([]); renderWrongBookPanel(); },
     add: addWrongBookEntry
+  };
+} catch (_) {}
+
+try {
+  window.__TYY_STORY = {
+    candidates: storyPicCandidates,
+    preload: preloadStoryPic,
+    resolved: () => {
+      const o = {};
+      for (const [k, v] of storyPicResolved) o[k] = typeof v === 'string' ? v : '(pending)';
+      return o;
+    },
+    currentSrc: () => storyPic?.currentSrc || storyPic?.getAttribute('src') || ''
   };
 } catch (_) {}
 
